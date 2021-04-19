@@ -1,0 +1,18 @@
+public /* * *
+public void mousePressed(MouseEvent e) { double x = e.getX();
+double y = e.getY();
+line = new GLine(x, y, x, y); add(line);
+}
+/*
+* Called when mouse is pressed and moved.
+* Sets the new endpoint for the line. */
+public void mouseDragged(MouseEvent e) { double x = e.getX();
+double y = e.getY(); line.setEndPoint(x, y);
+}
+/* instance variable representing the current line in progress */
+    private GLine line;
+}
+acm.graphics.*; acm.program.*; java.awt.event.*;
+class RubberBanding extends GraphicsProgram {
+Called when the mouse button is pressed down.
+Creates a new line on the screen. */
